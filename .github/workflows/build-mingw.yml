@@ -52,7 +52,7 @@ jobs:
             -Dlager_BUILD_DEBUGGER_EXAMPLES=OFF ^
             -Dlager_BUILD_DOCS=OFF ^
             -Dlager_EMBED_RESOURCES_PATH=ON ^
-            -Dlager_DISABLE_STORE_DEPENDENCY_CHECKS=OFF
+            -Dlager_DISABLE_STORE_DEPENDENCY_CHECKS=OFF ^
             -DCMAKE_INSTALL_PREFIX="cmake-build/${{ env.cmakeInstallationPath }}" -B./cmake-build &&^
             cd cmake-build && cmake --build . && cmake --install . 
             
