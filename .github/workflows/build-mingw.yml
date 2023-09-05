@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: git clone
         shell: cmd
-        run: git clone --recursive https://github.com/arximboldi/lager.git # && cd lager && git checkout ${{ env.tagName }}
+        run: git clone --recurse-submodules https://github.com/arximboldi/lager.git && cd lager && git checkout ${{ env.tagName }}
 
       - name: curl x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z
         shell: cmd
